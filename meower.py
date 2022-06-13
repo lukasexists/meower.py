@@ -1,4 +1,3 @@
-from ast import Pass
 from requests import get
 import json
 
