@@ -1,5 +1,5 @@
 # meower.py
-Python module for interacting with the Meower API
+Python library for interacting with the Meower API
 ## Commands
 - `meower.repair()` - Checks if the server is in repair mode
 - `meower.post_id(num)` - A very misleading name. Downloads home, then finds the post number
