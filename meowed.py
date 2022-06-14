@@ -1,3 +1,4 @@
+# Demo Meower client using meower.py
 import meower
 
 for i in range(0, meower.home_len()):
