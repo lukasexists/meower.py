@@ -60,4 +60,5 @@ def current_page():
         pass
 
 def change_page(page_num):
+    global page
     page = page_num
