@@ -1,6 +1,5 @@
 from requests import get
 import json
-from datetime import datetime
 
 page = 1
 
