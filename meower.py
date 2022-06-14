@@ -39,7 +39,10 @@ def get_post(id):
     post = get(f"https://api.meower.org/posts?id={id}").text
     try:
         load = json.loads(post)
-        return load["u"] + ": " + load["p"]
+        if (load["u"] == "Discord"):
+            return load["p"]
+        else:
+            return load["u"] + ": " + load["p"]
     except json.decoder.JSONDecodeError:
         pass
 
