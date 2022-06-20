@@ -25,3 +25,13 @@ For some reason (maybe because of the lack of a class), you can't use the tradit
 ```python
 from meower import meower
 ```
+## Building
+You can use the following commands corresponding to your OS:
+### Linux
+```
+python3 -m build
+```
+### Windows
+```
+py -m build
+```
