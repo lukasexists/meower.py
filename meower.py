@@ -1,7 +1,9 @@
 from requests import get
 import json
+from stopwatch import Stopwatch, profile
 
 page = 1
+stopwatch = Stopwatch()
 
 def repair():
     status = get("https://api.meower.org/status").text
@@ -62,3 +64,9 @@ def current_page():
 def change_page(page_num):
     global page
     page = page_num
+
+def ping():
+    stopwatch.start()
+    get("https://api.meower.org/")
+    stopwatch.stop()
+    return stopwatch.elapsed()
