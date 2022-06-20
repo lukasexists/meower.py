@@ -9,7 +9,7 @@ Python library for interacting with the Meower API
 - `meower.page_len()` - Shows the number of home pages
 - `meower.current_page()` - Returns the current page number
 - `meower.change_page(num)` - Changes the page
-- `meower.ping()` - "Pings" the Meower API, by fetching
+- `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root page
 ## Installing
 `meower.py` is now on PyPI (Python Package Index)! That means that you can use `pip3`, or `pip` to install it now!
 ### Linux
