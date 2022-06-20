@@ -9,3 +9,4 @@ Python library for interacting with the Meower API
 - `meower.page_len()` - Shows the number of home pages
 - `meower.current_page()` - Returns the current page number
 - `meower.change_page(num)` - Changes the page
+- `meower.ping()` - "Pings" the Meower API, by fetching
