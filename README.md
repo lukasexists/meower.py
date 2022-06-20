@@ -11,11 +11,12 @@ Python library for interacting with the Meower API
 - `meower.change_page(num)` - Changes the page
 - `meower.ping()` - "Pings" the Meower API, by fetching
 ## Installing
-`meower.py` is now on PyPI (Python Package Index)! That means that you can use `pip3`, or `pip` to install it, like this:
+`meower.py` is now on PyPI (Python Package Index)! That means that you can use `pip3`, or `pip` to install it now!
+### Linux
 ```
 pip3 install meower
 ```
-Or:
+### Windows
 ```
-pip install meower
+py -m pip install meower
 ```
