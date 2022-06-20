@@ -69,4 +69,4 @@ def ping():
     stopwatch.start()
     get("https://api.meower.org/")
     stopwatch.stop()
-    return stopwatch.elapsed()
+    return stopwatch.elapsed
