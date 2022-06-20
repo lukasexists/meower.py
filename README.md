@@ -36,7 +36,7 @@ python3 -m build
 py -m build
 ```
 ## Upgrading
-`meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can update the package like this:
+`meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can find new releases on [GitHub Releases](https://github.com/Mwalters75/meower.py/releases/latest), or on [PyPI](https://pypi.org/project/meower/#history). You can update the package like this:
 ### Linux
 ```
 pip3 install meower==x.x.x
