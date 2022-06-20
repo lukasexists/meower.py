@@ -13,7 +13,8 @@ def repair():
     except json.decoder.JSONDecodeError:
         pass
 
-def post_id(id):
+def find_post(id):
+    global page
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
@@ -22,6 +23,7 @@ def post_id(id):
         pass
 
 def get_home():
+    global page
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
@@ -30,6 +32,7 @@ def get_home():
         pass
 
 def home_len():
+    global page
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
@@ -46,6 +49,7 @@ def get_post(id):
         pass
 
 def page_len():
+    global page
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
@@ -54,9 +58,12 @@ def page_len():
         pass
 
 def current_page():
+    global page
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
+        if (page != load["page#"]):
+            page = load["page#"]
         return load["page#"]
     except json.decoder.JSONDecodeError:
         pass
