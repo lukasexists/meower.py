@@ -3,7 +3,7 @@ Python library for interacting with the Meower API
 ## Commands
 - `meower.repair()` - Checks if the server is in repair mode
 - `meower.post_id(num)` - A very misleading name. Downloads home, then finds the post number
-- `meower.home()` - Downloads home
+- `meower.get_home()` - Downloads home
 - `meower.home_len()` - Shows the number of posts on home
 - `meower.get_post(str)` - Gets the specified post, and shows in `username: post` format
 - `meower.page_len()` - Shows the number of home pages
@@ -19,4 +19,9 @@ pip3 install meower
 ### Windows
 ```
 py -m pip install meower
+```
+## Usage
+For some reason (maybe because of the lack of a class), you can't use the traditional `import meower` method. Instead, use:
+```python
+from meower import meower
 ```

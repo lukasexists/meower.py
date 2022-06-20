@@ -1,6 +1,6 @@
 from requests import get
 import json
-from stopwatch import Stopwatch, profile
+from stopwatch import Stopwatch
 
 page = 1
 stopwatch = Stopwatch()
@@ -21,7 +21,7 @@ def post_id(id):
     except json.decoder.JSONDecodeError:
         pass
 
-def home():
+def get_home():
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
