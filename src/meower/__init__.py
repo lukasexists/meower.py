@@ -1,1 +1,1 @@
-import meower
+from meower import meower
