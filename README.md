@@ -39,9 +39,9 @@ py -m build
 `meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can update the package like this:
 ### Linux
 ```
-pip3 install meower==[latest version]
+pip3 install meower==x.x.x
 ```
 ### Windows
 ```
-py -m pip install meower==[latest version]
+py -m pip install meower==x.x.x
 ```
