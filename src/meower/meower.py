@@ -27,7 +27,7 @@ def get_home():
     home = get(f"https://api.meower.org/home?page={page}").text
     try:
         load = json.loads(home)
-        return json.loads(load["index"])
+        return load["index"]
     except json.decoder.JSONDecodeError:
         pass
 
