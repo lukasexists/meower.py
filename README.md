@@ -21,7 +21,11 @@ For some reason (maybe because of the lack of a class), you can't use the tradit
 from meower import meower
 ```
 ## Building
-You can use the following commands corresponding to your OS:
+Before you build, you'd might want to double-check that you have all of the dependenceys:
+```
+pip3 install -r requirements.txt
+```
+Now, you can use the following commands corresponding to your OS:
 ### Linux
 ```
 python3 -m build
