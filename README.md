@@ -12,13 +12,8 @@ Python library for interacting with the Meower API
 - `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root page
 ## Installing
 `meower.py` is now on [PyPI](https://pypi.org/project/meower/) (Python Package Index)! That means that you can use `pip3`, or `pip` to install it now!
-### Linux
 ```
 pip3 install meower
-```
-### Windows
-```
-py -m pip install meower
 ```
 ## Usage
 For some reason (maybe because of the lack of a class), you can't use the traditional `import meower` method. Instead, use:
@@ -37,11 +32,6 @@ py -m build
 ```
 ## Upgrading
 `meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can update the package like this:
-### Linux
 ```
 pip3 install --upgrade meower
-```
-### Windows
-```
-py -m pip install --upgrade meower
 ```
