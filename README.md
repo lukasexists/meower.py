@@ -27,14 +27,9 @@ Before you build, you'd might want to double-check that you have all of the depe
 ```
 pip3 install -r requirements.txt
 ```
-Now, you can use the following commands corresponding to your OS:
-### Linux
+Run the `build` command:
 ```
 python3 -m build
-```
-### Windows
-```
-py -m build
 ```
 ## Upgrading
 `meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can update the package like this:
