@@ -74,6 +74,6 @@ def change_page(page_num):
 
 def ping():
     stopwatch.start()
-    get("https://api.meower.org/")
+    get("https://api.meower.org/").text
     stopwatch.stop()
     return stopwatch.elapsed
