@@ -5,7 +5,7 @@ from stopwatch import Stopwatch
 page = 1
 stopwatch = Stopwatch()
 
-def repairMode():
+def repair_mode():
     status = get("https://api.meower.org/status").text
     try:
         load = json.loads(status)
@@ -13,7 +13,7 @@ def repairMode():
     except json.decoder.JSONDecodeError:
         pass
 
-def scratchDeprecated():
+def scratch_deprecated():
     status = get("https://api.meower.org/status").text
     try:
         load = json.loads(status)
