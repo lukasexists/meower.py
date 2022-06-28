@@ -1,7 +1,8 @@
 # meower.py
 Python library for interacting with the Meower API
 ## Commands
-- `meower.repair()` - Checks if the server is in repair mode
+- `meower.repairMode()` - Checks if the server is in repair mode
+- `meower.scratchDeprecated()` - Checks if Scratch clients are now deprecated
 - `meower.find_post(num)` - Downloads home, then finds the post number
 - `meower.get_home()` - Downloads home
 - `meower.home_len()` - Shows the number of posts on home
