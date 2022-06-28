@@ -10,7 +10,8 @@ Python library for interacting with the Meower API
 - `meower.page_len()` - Shows the number of home pages
 - `meower.current_page()` - Returns the current page number
 - `meower.change_page(num)` - Changes the page
-- `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root page
+- `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root 
+- `meower.argoTunnel()` - Checks if there is a Argo Tunnel error on the API
 ## Installing
 `meower.py` is now on [PyPI](https://pypi.org/project/meower/) (Python Package Index)! That means that you can use `pip3`, or `pip` to install it now!
 ```
@@ -22,7 +23,7 @@ For some reason (maybe because of the lack of a class), you can't use the tradit
 from meower import meower
 ```
 ## Building
-Before you build, you'd might want to double-check that you have all of the dependenceys:
+Before you build, you'd might want to double-check that you have all of the dependencies:
 ```
 pip3 install -r requirements.txt
 ```
