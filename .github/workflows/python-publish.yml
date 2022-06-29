@@ -15,7 +15,7 @@ on:
     types: [published]
 
 permissions:
-  contents: read
+  contents: read, write
 
 jobs:
   deploy:
@@ -32,6 +32,7 @@ jobs:
       run: |
         pip3 install --upgrade pip
         pip3 install build
+        pip3 install --upgrade twine
     - name: Build package
       run: python3 -m build
     - name: Publish package
