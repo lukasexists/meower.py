@@ -86,7 +86,7 @@ def ping():
     stopwatch.stop()
     return stopwatch.elapsed
 
-def argoTunnel():
+def argo_tunnel():
     res = get("https://api.meower.org/").text
     if (res[1] == "<"):
         return True
