@@ -31,6 +31,10 @@ Run the `build` command:
 ```
 python3 -m build
 ```
+If you're on Linux, and having problems, you'd might want to run:
+```
+bash build.sh
+```
 ## Upgrading
 `meower.py` is a ongoing project, so you'd might want to check for updates regularly. You can update the package like this:
 ```
