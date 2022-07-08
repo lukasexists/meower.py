@@ -18,9 +18,9 @@ Python library for interacting with the Meower API
 pip3 install meower
 ```
 ## Usage
-For some reason (maybe because of the lack of a class), you can't use the traditional `import meower` method. Instead, use:
+To import, just simply use the following:
 ```python
-from meower import meower
+import meower
 ```
 ## Building
 Before you build, you'd might want to double-check that you have all of the dependencies:
