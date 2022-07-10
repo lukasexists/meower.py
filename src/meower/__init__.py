@@ -88,7 +88,9 @@ def ping():
 
 def argo_tunnel():
     res = get("https://api.meower.org/").text
-    if (res[1] == "<"):
+    try:
+        load = json.loads(res)
+    except json.decoder.JSONDecodeError:
         return True
     else:
         return False
