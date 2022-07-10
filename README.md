@@ -1,4 +1,6 @@
 # meower.py
+[![Upload Python Package](https://github.com/Mwalters75/meower.py/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Mwalters75/meower.py/actions/workflows/python-publish.yml)
+
 Python library for interacting with the Meower API
 ## Commands
 - `meower.repair_mode()` - Checks if the server is in repair mode
