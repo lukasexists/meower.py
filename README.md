@@ -47,7 +47,11 @@ for i in range(0, meower.home_len()):
 ### `meower.py`
 `meower.py` is licenced under the MEOW Licence, meaning that you can do the following to the source code:
 ```
-* Lorem ispum dolor sit amet
+* You are free to change, remove, or modify the above copyright notice.
+* You are free to use the software in private or commercial forms.
+* You are free to use, copy, modify, and/or distribute the software for any purpose.
+* You are free to distribute this software with or without fee.
+* Absolutely no patent use is permitted.
 ```
 ### Demo Client
 The demo client is licenced under the Unlicence licence, meaning that you can do the following to the source code:
