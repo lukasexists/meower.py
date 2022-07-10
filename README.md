@@ -13,7 +13,7 @@ Python library for interacting with the Meower API
 - `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root page 
 - `meower.argo_tunnel()` - Checks if there is a Argo Tunnel error on the API
 ## Installing
-`meower.py` is now on [PyPI](https://pypi.org/project/meower/) (Python Package Index)! That means that you can use `pip3`, or `pip` to install it now!
+`meower.py` is now on [PyPI](https://pypi.org/project/meower/) (Python Package Index)! That means that you can use `pip3`, or `pip` to install it, now!
 ```
 pip3 install meower
 ```
