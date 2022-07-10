@@ -43,3 +43,14 @@ import meower
 for i in range(0, meower.home_len()):
 	print(meower.get_post(meower.find_post(i)))
 ```
+## Licence
+### `meower.py`
+`meower.py` is licenced under the MEOW Licence, meaning that you can do the following to the source code:
+```
+* Lorem ispum dolor sit amet
+```
+### Demo Client
+The demo client is licenced under the Unlicence licence, meaning that you can do the following to the source code:
+```
+* Lorem ispum dolor sit amet
+```
