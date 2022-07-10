@@ -38,7 +38,7 @@ pip3 install --upgrade meower
 ```
 ## Demo Client
 ```python
-from meower import meower
+import meower
 
 for i in range(0, meower.home_len()):
 	print(meower.get_post(meower.find_post(i)))
