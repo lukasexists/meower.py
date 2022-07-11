@@ -94,3 +94,5 @@ def argo_tunnel():
         return True
     else:
         return False
+def profile_picture(user):
+    return "WIP"
