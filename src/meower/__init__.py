@@ -95,5 +95,8 @@ def argo_tunnel():
     else:
         return False
     
-def profile_picture(user):
-    return "WIP"
+def pfp(user):
+    res = get(f"https://dev.meower.org/pfp/{user}").text
+    f = open(f"{user}.png", "a")
+    f.write(res)
+    f.close()
