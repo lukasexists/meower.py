@@ -95,7 +95,7 @@ def argo_tunnel():
     else:
         return False
     
-def pfp(user):
+def get_pfp(user):
     res = get(f"https://dev.meower.org/pfp/{user}").text
     f = open(f"{user}.png", "a")
     f.write(res)
