@@ -4,7 +4,7 @@ Python library for interacting with the Meower API
 - `meower.repair_mode()` - Checks if the server is in repair mode
 - `meower.scratch_deprecated()` - Checks if Scratch clients are now deprecated
 - `meower.find_post(num)` - Downloads home, then finds the post number
-- `meower.get_home()` - Downloads home, in JSON format
+- `meower.get_home()` - Downloads home, in a JSON array
 - `meower.home_len()` - Shows the number of posts on home
 - `meower.get_post(str)` - Gets the specified post, and shows in `username: post` format
 - `meower.page_len()` - Shows the number of home pages
