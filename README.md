@@ -14,7 +14,7 @@ Python library for interacting with the Meower API
 - `meower.argo_tunnel()` - Checks if there is a Argo Tunnel error on the API
 - `meower.get_pfp(str)` - Downloads the specified user's profile picture
 ## Installing
-`meower.py` is now on [PyPI](https://pypi.org/project/meower/) (Python Package Index)! That means that you can use `pip3`, or `pip` to install it, now!
+`meower.py` is now on [PyPI](https://pypi.org/project/meower/)! That means that you can use `pip3` to install it, now!
 ```
 pip3 install meower
 ```
@@ -43,19 +43,4 @@ import meower
 
 for i in range(0, meower.home_len()):
 	print(meower.get_post(meower.find_post(i)))
-```
-## Licence
-### `meower.py`
-`meower.py` is licenced under the MEOW Licence, meaning that you can do the following to the source code:
-```
-* You are free to change, remove, or modify the above copyright notice.
-* You are free to use the software in private or commercial forms.
-* You are free to use, copy, modify, and/or distribute the software for any purpose.
-* You are free to distribute this software with or without fee.
-* Absolutely no patent use is permitted.
-```
-### Demo Client
-The demo client is licenced under the Unlicence licence, meaning that you can do the following to the source code:
-```
-* Lorem ispum dolor sit amet
 ```
