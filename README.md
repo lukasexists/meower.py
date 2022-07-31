@@ -12,7 +12,9 @@ Python library for interacting with the Meower API
 - `meower.change_page(num)` - Changes the page
 - `meower.ping()` - "Pings" the Meower API, by timing `requests` to fetch the root page 
 - `meower.argo_tunnel()` - Checks if there is a Argo Tunnel error on the API
-- `meower.get_pfp(str)` - Downloads the specified user's profile picture
+- `meower.stats_chats()` - Shows the total amount of chats
+- `meower.stats_users()` - Shows the total amount of users
+- `meower.stats_posts()` - Shows the total amount of posts
 ## Installing
 `meower.py` is now on [PyPI](https://pypi.org/project/meower/)! That means that you can use `pip3` to install it, now!
 ```
