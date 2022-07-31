@@ -94,9 +94,27 @@ def argo_tunnel():
         return True
     else:
         return False
-    
-def get_pfp(user):
-    res = get(f"https://dev.meower.org/pfp/{user}").text
-    f = open(f"{user}.png", "a")
-    f.write(res)
-    f.close()
+   
+def stats_chats():
+    stats = get("https://api.meower.org/statistics").text
+    try:
+        load = json.loads(stats)
+        return loads["chats"]
+    except json.decoder.JSONDecodeError:
+        pass
+        
+def stats_users():
+    stats = get("https://api.meower.org/statistics").text
+    try:
+        load = json.loads(stats)
+        return loads["users"]
+    except json.decoder.JSONDecodeError:
+        pass
+        
+def stats_posts():
+    stats = get("https://api.meower.org/statistics").text
+    try:
+        load = json.loads(stats)
+        return loads["posts"]
+    except json.decoder.JSONDecodeError:
+        pass
