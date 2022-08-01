@@ -140,3 +140,11 @@ def user_uuid(user):
         return load["uuid"]
     except json.decoder.JSONDecodeError:
         pass
+
+def user_pfp(user):
+    user = get(f"https://api.meower.org/users/{user}").text
+    try:
+        load = json.loads(user)
+        return load["pfp"]
+    except json.decoder.JSONDecodeError:
+        pass
