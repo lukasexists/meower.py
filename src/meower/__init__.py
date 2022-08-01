@@ -118,3 +118,27 @@ def stats_posts():
         return loads["posts"]
     except json.decoder.JSONDecodeError:
         pass
+
+def user_lvl(user):
+    user = get(f"https://api.meower.org/users/{user}").text
+    try:
+        load = json.loads(user)
+        return load["lvl"]
+    except json.decoder.JSONDecodeError:
+        pass
+
+def user_banned(user):
+    user = get(f"https://api.meower.org/users/{user}").text
+    try:
+        load = json.loads(user)
+        return load["banned"]
+    except json.decoder.JSONDecodeError:
+        pass
+
+def user_uuid(user):
+    user = get(f"https://api.meower.org/users/{user}").text
+    try:
+        load = json.loads(user)
+        return load["uuid"]
+    except json.decoder.JSONDecodeError:
+        pass
