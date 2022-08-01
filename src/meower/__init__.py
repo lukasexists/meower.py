@@ -87,10 +87,8 @@ def ping():
     return stopwatch.elapsed
 
 def argo_tunnel():
-    res = get("https://api.meower.org/").text
-    try:
-        load = json.loads(res)
-    except json.decoder.JSONDecodeError:
+    res = get("https://api.meower.org/")
+    if res.status_code != 200:
         return True
     else:
         return False
