@@ -15,6 +15,10 @@ Python library for interacting with the Meower API
 - `meower.stats_chats()` - Shows the total amount of chats
 - `meower.stats_users()` - Shows the total amount of users
 - `meower.stats_posts()` - Shows the total amount of posts
+- `meower.user_lvl(user)` - Shows the specified user's level
+- `meower.user_banned(user) - Shows if the specified user is banned from Meower
+- `meower.user_uuid(user)` - Shows the specified user's UUID
+- `meower.user_pfp(user)` - Shows the specified user's profile picture number
 ## Installing
 `meower.py` is now on [PyPI](https://pypi.org/project/meower/)! That means that you can use `pip3` to install it, now!
 ```
