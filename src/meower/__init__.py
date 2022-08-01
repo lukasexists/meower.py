@@ -4,6 +4,7 @@ from stopwatch import Stopwatch
 
 page = 1
 stopwatch = Stopwatch()
+auth = ["", ""]
 
 def repair_mode():
     status = get("https://api.meower.org/status").text
@@ -148,3 +149,16 @@ def user_pfp(user):
         return load["pfp"]
     except json.decoder.JSONDecodeError:
         pass
+
+def set_auth(username, token):
+    global auth
+    auth[0] = username
+    auth[1] = token
+    
+def clear_auth():
+    global auth
+    auth = ["", ""]
+    
+def auth():
+    global auth
+    return auth
