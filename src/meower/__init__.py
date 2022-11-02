@@ -1,9 +1,7 @@
 from requests import get
 import json
-from stopwatch import Stopwatch
 
 page = 1
-stopwatch = Stopwatch()
 
 def repair_mode():
     status = get("https://api.meower.org/status").text
